@@ -38,7 +38,7 @@ public class MainPage extends PageObject {
         searchInput.submit();
     }
 
-    public void login(String loginEmail, String loginPassword){
+    public void login(String loginEmail, String loginPassword) {
         loginButton.click();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -47,5 +47,6 @@ public class MainPage extends PageObject {
         email.sendKeys(loginEmail);
         password.sendKeys(loginPassword);
         submitButton.click();
+
     }
 }
